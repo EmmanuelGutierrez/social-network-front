@@ -38,25 +38,25 @@ export const Sidebar = () => {
 
   return (
     <>
-      <button onClick={() => setHide(!hide)} className={`md:hidden`}>
+      <button onClick={() => setHide(!hide)} className={`lg:hidden`}>
         <MenuScale width={35} height={35} />
       </button>
       <nav
         className={`bg-blue-light border-gray-200 dark:bg-blue-dark  fixed
       border-r z-1 top-0 left-0  overflow-x-hidden  duration-500 flex w-full
       ${hide ? "h-screen border-r-primary px-6 pt-16" : "h-0 pt-0"}
-      md:w-72 md:px-6  flex-col content-center md:border-r-primary md:h-screen md:pt-16
+      lg:w-72 lg:px-6  flex-col content-center lg:border-r-primary lg:h-screen lg:pt-16
       dark:border-r-tertiary `}
       >
         <button
           onClick={() => setHide(!hide)}
-          className="absolute top-1 left-1 md:hidden"
+          className="absolute top-1 left-1 lg:hidden"
         >
           <DeleteCircle width={35} height={35} />
         </button>
         <PerfilCard className={`w-full`} />
         <Card className="mt-16 w-full">
-          <div className="p-4 text-gray-900 md:pb-4 dark:text-white">
+          <div className="p-4 text-gray-900 lg:pb-4 dark:text-white">
             <ul className="divide-y divide-primary divide dark:divide-tertiary">
               {routes.map((r) => (
                 <li key={r.route} className="py-3">

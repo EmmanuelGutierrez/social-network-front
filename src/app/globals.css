@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 245, 245, 245;
+  --background-start-rgb: 227, 229, 233;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -16,11 +16,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
     margin-left: 18rem;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,5 +30,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  height: 100vh;
 }

@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <title> App 1</title>
       </head>
-      <body className={`${poppins.className}`}>
+      <body className={`${poppins.className} lg:ml-72 min-h-screen`}>
         <Sidebar />
         {children}
       </body>

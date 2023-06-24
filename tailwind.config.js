@@ -3,10 +3,18 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/containers/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   presets: [],
   theme: {
+    extend: {
+      spacing: {
+        100: "28rem",
+        116: "30rem",
+        120: "3rem",
+      },
+    },
     accentColor: ({ theme }) => ({
       ...theme("colors"),
       auto: "auto",
@@ -144,7 +152,7 @@ module.exports = {
       primary: "#212c88",
       secondary: "#ffffff",
       tertiary: "#383a45",
-      grey: "##f5f5f5",
+      grey: "#e3e5e9",
       "blue-dark": "#111827",
       "blue-light": "#a0b4dd",
       inherit: colors.inherit,
@@ -994,7 +1002,6 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
-      100: "28rem",
     }),
     willChange: {
       auto: "auto",
